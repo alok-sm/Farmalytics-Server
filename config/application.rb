@@ -63,10 +63,10 @@ module FarmalyticsServer
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
-    require 'mongoid'
+    # config.assets.version = '1.0'
+    # require 'mongoid'
 
-    Mongoid.load!(File.expand_path('mongoid.yml', './config'))
+    # Mongoid.load!(File.expand_path('mongoid.yml', './config'))
     config.assets.initialize_on_precompile = false
   end
 end
