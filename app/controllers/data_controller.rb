@@ -1,6 +1,8 @@
 class DataController < ApplicationController
 	def upload
-		RequestParams.new(params).save
+		parm = RequestParams.new(params)
+		parm.save
+		puts(params.to_h)
 		render :json => '1'
 	end
 end
